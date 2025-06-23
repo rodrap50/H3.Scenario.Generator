@@ -1,0 +1,6 @@
+@H3.Senario.Generator.API_HostAddress = http://localhost:5241
+
+GET {{H3.Senario.Generator.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
