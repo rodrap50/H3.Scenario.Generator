@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("H3.Scenario.Generator.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ccf7c471ae8cffe975330f530c55c5d558fcbf50")]
 [assembly: System.Reflection.AssemblyProductAttribute("H3.Scenario.Generator.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("H3.Scenario.Generator.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

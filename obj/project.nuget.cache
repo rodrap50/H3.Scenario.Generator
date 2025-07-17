@@ -1,11 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "wgB7icQ6frk=",
+  "dgSpecHash": "pjRd5DJOYgs=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Adam\\Code\\H3.Senario.Generator\\H3.Scenario.Generator.API\\H3.Scenario.Generator.API.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\Adam\\.nuget\\packages\\microsoft.aspnetcore.openapi\\9.0.6\\microsoft.aspnetcore.openapi.9.0.6.nupkg.sha512",
-    "C:\\Users\\Adam\\.nuget\\packages\\microsoft.openapi\\1.6.17\\microsoft.openapi.1.6.17.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\GitCode\\Personal\\H3.Scenario.Generator\\H3.Scenario.Generator.API.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

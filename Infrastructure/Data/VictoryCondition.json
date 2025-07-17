@@ -1,0 +1,108 @@
+﻿{
+  "co-op": [
+    {
+      "condition": "",
+      "weight": 1
+    }
+  ],
+  "clash": {
+    "generic_rules": [
+      "If a player has no Towns or Settlements for 3 rounds, they are eliminated.",
+      "If a Main Hero is defeated defending a besieged Town with no remaining towns or settlements, the player is eliminated.",
+      "Last player remaining wins.",
+      "Collecting a faction cube from each remaining opponent in games with 3+ players also results in a win."
+    ],
+    "victory_conditions": [
+      {
+        "condition": "At the end of a round, if any player controls 5 or more \nMines, the players will play one final round. The player \nwith the most Mines at the end of that round is the \nwinner. If every player has the same amount of Mines \nthe game ends in a draw.",
+        "secondaryId": 2001,
+        "weight": 1
+      },
+      {
+        "condition": "Vanquish the enemy Hero in Combat.",
+        "secondaryId": 2002,
+        "weight": 1
+      },
+      {
+        "condition": "Be the last remaining player or transport the Grail to your Town.",
+        "secondaryId": 2003,
+        "weight": 1
+      },
+      {
+        "condition": "Gain the Grail token with a Main Hero and return it to your Faction Town.",
+        "secondaryId": 2004,
+        "weight": 1
+      }
+    ],
+    "secondary_condition": [
+      {
+        "id": 2001,
+        "condition": "If no winner by round 8, check control at end of round 9.",
+        "weight": 1
+      },
+      {
+        "id": 2002,
+        "condition": "If not completed by the end of round 7, players enter a final Combat to decide the winner.",
+        "weight": 1
+      },
+      {
+        "id": 2003,
+        "condition": "If no winner by round 11 and no eliminations, all players lose.",
+        "weight": 1
+      },
+      {
+        "id": 2004,
+        "condition": "If not completed by round 10, the player with the Grail gets until round 13.",
+        "weight": 1
+      },
+      
+    ]
+  },
+  "alliance": {
+    "generic_rules": [
+      "Allied players share victory and defeat conditions.",
+      "An Alliance must meet the scenario-specific victory conditions to win.",
+      "Alliances can exchange resources and artifacts (with adjacent Heroes)."
+    ],
+    "victory_conditions": [
+      {
+        "condition": "Deliver the Grail token to one of the Alliance\\u2019s Towns by the end of round 12.",
+        "secondaryId": 1001,
+        "weight": 1
+      },
+      {
+        "condition": "Obtain the Grail token and bring it to your Faction Town.",
+        "secondaryId": 1002,
+        "weight": 1
+      },
+      {
+        "condition": "Control 12 tiles or hold an enemy Town for 2 rounds.",
+        "secondaryId": 1003,
+        "weight": 1
+      }
+    ],
+    "secondary_condition": [
+      {
+        "id": 1001,
+        "condition": "If not met, all players lose.",
+        "weight": 1        
+      },
+      {
+        "id": 1002,
+        "condition": "If not completed by round 11, players get until round 14. Otherwise, all lose.",
+        "weight": 1
+      },
+      {
+        "id": 1003,
+        "condition": "Victory checked at round 11, with possible extension to round 13.",
+        "weight": 1
+      }
+    ]
+  },
+  "single": [
+    {
+      "condition": "",
+      "weight": 1
+    }
+  ]
+}
