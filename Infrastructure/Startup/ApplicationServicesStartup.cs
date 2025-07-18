@@ -1,10 +1,13 @@
-﻿namespace H3.Scenario.Generator.API.Infrastructure.Startup;
+﻿using H3.Scenario.Generator.API.Infrastructure.Services;
+
+namespace H3.Scenario.Generator.API.Infrastructure.Startup;
 
 public static class ApplicationServicesStartup
 {
     public static WebApplicationBuilder AddCustomServices(this WebApplicationBuilder builder)
     {
         //builder.Services.AddScoped<IPasswordGenerator, PasswordGenerator>();
+        builder.Services.AddScoped<IRepository, JSonRepository>();
         
         return builder;
     }
