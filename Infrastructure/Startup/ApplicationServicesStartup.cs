@@ -1,5 +1,5 @@
 ﻿using H3.Scenario.Generator.API.Infrastructure.Services;
-
+using Serilog;
 namespace H3.Scenario.Generator.API.Infrastructure.Startup;
 
 public static class ApplicationServicesStartup
@@ -34,5 +34,13 @@ public static class ApplicationServicesStartup
         });
 
         return builder;
+    }
+
+    public static WebApplicationBuilder AddLogger(this WebApplicationBuilder builder){
+        
+
+
+        return builder;
+
     }
 }

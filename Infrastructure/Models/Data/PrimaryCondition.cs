@@ -3,5 +3,5 @@ public class PrimaryCondition
 {
     public string Condition { get; set; } = string.Empty;
     public int Weight { get; set; } 
-    public int SecondaryCondition { get; set; }
+    public int SecondaryId { get; set; }
 }
