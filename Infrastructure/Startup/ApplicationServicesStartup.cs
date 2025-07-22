@@ -7,7 +7,9 @@ public static class ApplicationServicesStartup
     public static WebApplicationBuilder AddCustomServices(this WebApplicationBuilder builder)
     {
         //builder.Services.AddScoped<IPasswordGenerator, PasswordGenerator>();
-        builder.Services.AddScoped<IRepository, JSonRepository>();
+        builder.Services.AddScoped<IRepository, JSonRepository>()
+                        .AddScoped<IRandomizer, Randomizer>()
+                        .AddScoped<IScenarioGenerator, ScenarioGenerator>();
         
         return builder;
     }
@@ -20,6 +22,7 @@ public static class ApplicationServicesStartup
         });
         builder.Services.AddEndpointsApiExplorer();
         builder.Services.AddHttpContextAccessor();
+        builder.Services.AddSwaggerGen();
 
         builder.Services.AddCors(options =>
         {
